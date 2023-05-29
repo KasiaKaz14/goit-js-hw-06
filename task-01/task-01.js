@@ -1,3 +1,5 @@
+"use.strict";
+
 console.clear();
 
 const categoriesNumber = document.querySelectorAll(".item");

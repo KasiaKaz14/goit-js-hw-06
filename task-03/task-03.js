@@ -1,3 +1,5 @@
+"use.strict";
+
 const images = [
   {
     url: "https://images.pexels.com/photos/140134/pexels-photo-140134.jpeg?dpr=2&h=750&w=1260",
@@ -16,7 +18,12 @@ const images = [
 const list = document.querySelector(".gallery");
 
 const markup = images
-  .map((image) => `<li class = "image-third"><img ${image}></li>`)
+  .map(
+    (image) =>
+      `<li class = "image-third"><img url = ${image.url} alt = "${image.alt}" /></li>`
+  )
   .join("");
 
 list.insertAdjacentHTML("afterbegin", markup);
+
+console.log(markup);

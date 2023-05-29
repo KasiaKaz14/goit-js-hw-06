@@ -24,3 +24,11 @@ list.prepend(thirdItem);
 const fourthItem = document.createElement("li.item");
 fourthItem.textContent = "Tomatos";
 list.prepend(fourthItem);
+
+const fifthItem = document.createElement("li.item");
+fifthItem.textContent = "Herbs";
+list.prepend(fifthItem);
+
+const lastItem = document.createElement("li.item");
+lastItem.textContent = "Condiments";
+list.prepend(lastItem);

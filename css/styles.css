@@ -1,5 +1,7 @@
-.image-third {
+.gallery {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   gap: 30px;
+  list-style-type: none;
 }

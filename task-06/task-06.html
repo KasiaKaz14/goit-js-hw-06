@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/css/styles.css" rel="stylesheet" />
     <title>Document</title>
+    <style>
+      #validation-input {
+        border: 3px solid #bdbdbd;
+      }
+
+      #validation-input.valid {
+        border-color: #4caf50;
+      }
+
+      #validation-input.invalid {
+        border-color: #f44336;
+      }
+    </style>
   </head>
   <body>
     <input
@@ -14,6 +27,6 @@
       data-length="6"
       placeholder="Please enter 6 symbols"
     />
-    <script src="./task-06.js"></script>
+    <script src="./task-06.js" defer></script>
   </body>
 </html>

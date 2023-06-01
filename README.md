@@ -1,1 +1,1 @@
-https://kasiakaz14.github.io/goit-js-hw-06/index.html
+https://kasiakaz14.github.io/goit-js-hw-06/

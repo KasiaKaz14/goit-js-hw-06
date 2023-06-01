@@ -1,16 +1,16 @@
-const widget = document.querySelector(".widget");
 const color = document.querySelector(".color");
-const changeColor = document.querySelector(".change-color");
+const button = document.querySelector(".change-color");
 const body = document.querySelector("body");
 
+button.addEventListener("click", setNewColor);
+
+function setNewColor() {
+  let newColor = getRandomHexColor();
+  color.innerHTML = `${newColor}`;
+  body.style.backgroundColor = newColor;
+}
 function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215)
     .toString(16)
     .padStart(6, 0)}`;
 }
-
-function setNewColor() {
-  body.style.backgroundColor = getRandomHexColor.value;
-}
-
-body.addEventListener("change", setNewColor);

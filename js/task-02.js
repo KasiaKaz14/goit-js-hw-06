@@ -17,6 +17,6 @@ ingredients.forEach((ingredient) => {
   li.textContent = ingredient;
   array.push(li);
 });
-list.prepend(...array);
+list.append(...array);
 
 console.log(list);
